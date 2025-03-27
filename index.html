@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial & Poisson Distribution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Binomial & Poisson Distribution Calculator</h1>
+        <div class="form-container">
+            <h2>Binomial Distribution</h2>
+            <label for="n">Number of Trials (n):</label>
+            <input type="number" id="n" placeholder="Enter n">
+
+            <label for="p">Probability of Success (p):</label>
+            <input type="number" id="p" step="0.01" placeholder="Enter p (0-1)">
+
+            <label for="k-binomial">Number of Successes (k):</label>
+            <input type="number" id="k-binomial" placeholder="Enter k">
+
+            <button onclick="calculateBinomial()">Calculate Binomial</button>
+            <h3 id="binomial-result"></h3>
+            <canvas id="binomialChart"></canvas>
+        </div>
+
+        <div class="form-container">
+            <h2>Poisson Distribution</h2>
+            <label for="lambda">Average Rate (λ):</label>
+            <input type="number" id="lambda" step="0.01" placeholder="Enter λ">
+
+            <label for="k-poisson">Number of Occurrences (k):</label>
+            <input type="number" id="k-poisson" placeholder="Enter k">
+
+            <button onclick="calculatePoisson()">Calculate Poisson</button>
+            <h3 id="poisson-result"></h3>
+            <canvas id="poissonChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
