@@ -11,7 +11,6 @@ function factorial(num) {
     }
     return result;
 }
-
 // Binomial Distribution Calculation
 function calculateBinomial() {
     const n = parseInt(document.getElementById("n").value);
